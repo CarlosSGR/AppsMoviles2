@@ -56,38 +56,11 @@ struct DashboardView: View {
                     .offset(y:60)
                     Spacer()
                     
-                    HStack{
-                        VStack{
-                            Text("17 Licenciaturas").padding(.vertical)
-                            Text("Conoce nuestra oferta académica y elige el programa perfecto para ti.").font(.caption)
-                        }
-                        
-                        Divider().frame(width: 2, height: 80).background(.green)
-                        
-                        VStack{
-                            Text("16 Maestrías").padding(.vertical)
-                            Text("Excelencia académica y la preparación que requieres para tu desarrollo profesional.").font(.caption)
-                        }
-                    }.frame(maxWidth: .infinity).padding().background(.black).foregroundStyle(.white)
+                    DegreesView()
                     
-                    
-                    Spacer()
-                    
-                    Text("Conoce las licenciaturas")
-                        .padding()
-                        .background(.orange)
-                        .clipShape(RoundedRectangle(cornerRadius: 20))
-                        .foregroundStyle(.white)
-                        .shadow(color: .yellow, radius: 12)
-                        .padding()
-                        .frame(maxWidth: .infinity)
-                        .background(.black)
-                        .shadow(color: .colorPersonalizado1, radius: 12)
-                    
-                    
-                    
-                    
-                    
+                    AdView()
+
+                    ButtonView()
                     
                 }
                 ChatBubbleView().offset(x: -8)
