@@ -14,13 +14,33 @@ struct SeriesDetalleView: View {
     @State var nombre: String
     @State var temporadas: String
     
+    var tipoBadge: Int
+    
     var body: some View {
         VStack{
-            Image(imagen).resizable().aspectRatio(contentMode: .fit).clipShape(RoundedRectangle(cornerRadius: 20))
+            Image(imagen).resizable().frame(width: 400).aspectRatio(contentMode: .fit).clipShape(RoundedRectangle(cornerRadius: 20))
                 .overlay(
                     VStack{
-                        Image(.capturaDePantalla20260821ALaS55224PM)
-                        Image(.capturaDePantalla20260821ALaS55209PM)
+                        switch tipoBadge {
+                        case 1:
+                            Image(.capturaDePantalla20260821ALaS55224PM).resizable().frame(width: 40, height: 40)
+                        case 2:
+                            Image(.capturaDePantalla20260821ALaS55209PM).resizable().frame(width: 40, height: 40)
+                        case 3:
+                            Image(.capturaDePantalla20260821ALaS55224PM).resizable().frame(width: 40, height: 40)
+                            Image(.capturaDePantalla20260821ALaS55209PM).resizable().frame(width: 40, height: 40)
+                        case 4:
+                            Image(.capturaDePantalla20260821ALaS55224PM).resizable().frame(width: 40, height: 40)
+                            Image(.capturaDePantalla20260821ALaS55209PM).resizable().frame(width: 40, height: 40)
+                            Spacer()
+                            Text("Episodios Gratis").padding(5).background(.white).clipShape(RoundedRectangle(cornerRadius: 20))
+                        default:
+                            Spacer()
+                            Text("Episodios Gratis").padding(5).background(.white).clipShape(RoundedRectangle(cornerRadius: 20))
+                        }
+                        
+                        
+                        
                     }.frame(maxWidth: .infinity,maxHeight: .infinity, alignment: .topLeading)
             )
             VStack(alignment: .leading){
@@ -35,5 +55,5 @@ struct SeriesDetalleView: View {
 }
 
 #Preview {
-    SeriesDetalleView(imagen: .capturaDePantalla20260821ALaS54719PM, categoria:"Drama", nombre: "Because This Is My First Life", temporadas: "1 temporada")
+    SeriesDetalleView(imagen: .capturaDePantalla20260821ALaS54719PM, categoria:"Drama", nombre: "Because This Is My First Life", temporadas: "1 temporada", tipoBadge: 1)
 }
