@@ -27,6 +27,11 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		3505F8D23048EC1800632944 /* Tarea01 */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Tarea01;
+			sourceTree = "<group>";
+		};
 		357E61C930240C45007DCFE7 /* holaMundo */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
@@ -54,6 +59,7 @@
 				359C4F32302FE58A0074F2A6 /* Localizable.strings */,
 				357E61C930240C45007DCFE7 /* holaMundo */,
 				357E61C830240C45007DCFE7 /* Products */,
+				3505F8D23048EC1800632944 /* Tarea01 */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,6 +87,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
+				3505F8D23048EC1800632944 /* Tarea01 */,
 				357E61C930240C45007DCFE7 /* holaMundo */,
 			);
 			name = holaMundo;
