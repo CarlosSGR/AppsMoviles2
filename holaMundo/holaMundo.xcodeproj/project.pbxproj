@@ -45,6 +45,26 @@
 			path = holaMundo;
 			sourceTree = "<group>";
 		};
+		35ACB4E5307718CD00030EF7 /* Act02 */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Act02;
+			sourceTree = "<group>";
+		};
+		35ACB4ED307718DC00030EF7 /* Act04 */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Act04;
+			sourceTree = "<group>";
+		};
+		35ACB4F4307718E200030EF7 /* Tarea02 */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Tarea02;
+			sourceTree = "<group>";
+		};
+		35ACB50C307718E600030EF7 /* star_jedi */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = star_jedi;
+			sourceTree = "<group>";
+		};
 		35B3AFE3304B9B6500E08399 /* Tarea03 */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = Tarea03;
@@ -72,6 +92,10 @@
 				3505F8D23048EC1800632944 /* Tarea01 */,
 				3505F8D53048F78D00632944 /* Act03 */,
 				35B3AFE3304B9B6500E08399 /* Tarea03 */,
+				35ACB4E5307718CD00030EF7 /* Act02 */,
+				35ACB4ED307718DC00030EF7 /* Act04 */,
+				35ACB4F4307718E200030EF7 /* Tarea02 */,
+				35ACB50C307718E600030EF7 /* star_jedi */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,6 +126,10 @@
 				3505F8D23048EC1800632944 /* Tarea01 */,
 				3505F8D53048F78D00632944 /* Act03 */,
 				357E61C930240C45007DCFE7 /* holaMundo */,
+				35ACB4E5307718CD00030EF7 /* Act02 */,
+				35ACB4ED307718DC00030EF7 /* Act04 */,
+				35ACB4F4307718E200030EF7 /* Tarea02 */,
+				35ACB50C307718E600030EF7 /* star_jedi */,
 				35B3AFE3304B9B6500E08399 /* Tarea03 */,
 			);
 			name = holaMundo;
