@@ -8,14 +8,25 @@
 import SwiftUI
 
 struct ContentView: View {
+
+    @State var dptoVM = deptoVM().dummyData()
+    
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        VStack{
+            HStack{
+                Text("Departamentos").font(.title)
+                Spacer()
+            }
+            
+            List(){
+                ForEach(dptoVM, id: \.self.uuid) { dpto in departamentosDetalle(imagen: dpto.imagen, direccion: dpto.direccion, departamento: "caca", nombre: dpto.nombre, calificacion: dpto.calificacion, precio: dpto.precio, superficie: dpto.superficie)
+                    
+            }
+         
         }
-        .padding()
+            Spacer()
+        }.padding()
     }
 }
 
